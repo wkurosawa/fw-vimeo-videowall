@@ -1,3 +1,6 @@
+
+
+
 jQuery(document).ready( function() {
         jQuery(".fwvvw_vthumb").live('click',
 		function() {
@@ -79,3 +82,18 @@ jQuery(document).ready( function() {
 
 }
 );
+
+$(document).keydown(function(e) {
+    // ESCAPE key pressed
+    if (e.keyCode == 27) {
+        jQuery("#fwvvw_full_video").remove();
+		jQuery("#fwvvw_bg_video").remove();
+    }
+});
+
+$(document).mouseup(function (e)
+{
+    jQuery("#fwvvw_full_video").remove();
+	jQuery("#fwvvw_bg_video").remove();
+});
+
